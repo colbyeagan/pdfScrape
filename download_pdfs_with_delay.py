@@ -5,15 +5,15 @@ import random
 from datetime import datetime
 
 # Load URLs and names from a CSV file
-csv_file_path = '/Users/colbyeagan/codingRepos/PdfDownloadProj/download_list.csv'  # Replace this with the path to your CSV file
+csv_file_path = 'urls.csv'  # Replace this with the path to your CSV file
 data = pd.read_csv(csv_file_path)
 
 # Load institution assignments from CSV file
-csv_journal_assignments = '/Users/colbyeagan/codingRepos/PdfDownloadProj/institutional_access.csv' # Replace with the path to "institutional access" tab on "journal_list_for_annotation" google sheets
+csv_journal_assignments = 'assignments.csv' # Replace with the path to "institutional access" tab on "journal_list_for_annotation" google sheets
 assignment_data = pd.read_csv(csv_journal_assignments)
 
 # Replace with your institution name
-institution = 'unc'
+institution = 'institution_name'
 
 # Iterate through assignments and create set of journals for your institution's assignment
 journals_set = set()
